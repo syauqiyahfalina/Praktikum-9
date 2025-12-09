@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        background: #f9e3d2;
+    }
+
+    .box {
+        width: 400px; 
+        padding: 30px;
+        background: rgb(255, 243, 229);
+        box-shadow: 0 4px 15px #000;
+        border-radius: 15px;
+        text-align: center;
+    }
+    label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 380px; 
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid rgb(135, 83, 83);
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: rgb(90, 45, 45);
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+</style>
+</head>
+<body>
+<div class="box">
+    <h2>Log In</h2>
+
+    <form onsubmit="return login()">
+        <label>Username :</label>
+        <input type="text" id="username" placeholder="Masukkan Username">
+
+        <label>Password :</label>
+        <input type="password" id="password" placeholder="Masukkan Password">
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script src="otentikasi.js"></script>
+</body>
+</html>
